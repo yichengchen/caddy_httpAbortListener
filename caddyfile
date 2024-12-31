@@ -1,0 +1,13 @@
+{
+  servers {
+    listener_wrappers {
+      http_abort
+      tls
+    }
+  }
+}
+
+localhost:443 {
+    tls internal
+    respond "Welcome"
+}
